@@ -38,6 +38,123 @@ console.log('')
 console.log('-----------------')
 
 /***********
+Problem: Scrabble Scorer
+
+Create a function named `scrabbleScore()` that accepts a parameter called "word". The function should use the following table to calculate the Scrabble score of a provided word:
+
+```
+Letter                           Value
+A, E, I, O, U, L, N, R, S, T       1
+D, G                               2
+B, C, M, P                         3
+F, H, V, W, Y                      4
+K                                  5
+J, X                               8
+Q, Z                               10
+```
+
+Feel free to add any additional functions or variables you deem necessary to meet the above requirements
+
+Test Cases:
+Use the following test cases to confirm your program meets the success criteria
+
+1. scrabbleScore("cabbage")
+   Note: c = 3, a = 1 (twice), b = 3 (twice), g = 2, e = 1
+
+   Expected Result: 14
+
+2. scrabbleScore("javascript")
+
+   Expected Result: 24
+
+3. scrabbleScore("function")
+
+   Expected Result: 13
+
+************/
+console.log('Problem 2:')
+
+// Add your code below this line
+
+// Add your code above this line
+
+/** added for formatting purposes **/
+console.log('')
+console.log('-----------------')
+
+/***********
+Problem: Palindromes
+
+Palindromes are words which read the same forward as backwards. For example, "madam" and "noon" are both palindromes.
+
+Create a function named `isPalindrome()` that accepts a parameter called "word". The function will return true if the word is a palindrome and false if it is not.
+
+Feel free to add any additional functions or variables you deem necessary to meet the above requirements
+
+Test Cases:
+Use the following test cases to confirm your program meets the success criteria
+
+1. isPalindrome("noon")
+
+   Expected Result: true
+
+2. isPalindrome("racecar")
+
+   Expected Result: true
+
+3. isPalindrome("moon")
+
+   Expected Result: false
+
+4. isPalindrome("run")
+
+   Expected Result: false
+
+************/
+console.log('Problem 3:')
+
+// Add your code below this line
+
+// Add your code above this line
+
+/** added for formatting purposes **/
+console.log('')
+console.log('-----------------')
+
+/***********
+Problem: Double Letter Checker
+
+Create a function that takes a "word" as a parameter and returns true if the word has two consecutive identical letters.
+
+Feel free to add any additional functions or variables you deem necessary to meet the above requirements
+
+Test Cases:
+Use the following test cases to confirm your program meets the success criteria
+
+1. doubleLetters("loop")
+
+   Expected Result: true
+
+2. doubleLetters("rune")
+
+   Expected Result: false
+
+3. doubleLetters("apple")
+
+   Expected Result: true
+
+************/
+console.log('Problem 4:')
+
+// Add your code below this line
+
+// Add your code above this line
+
+/** added for formatting purposes **/
+console.log('')
+console.log('-----------------')
+
+/***********
 Problem: Word Counter
 
 Create a function named `wordCount()` that accepts a parameter called "phrase" which counts the number of occurrences of each word in that phrase
@@ -87,124 +204,7 @@ Use the following test cases to confirm your program meets the success criteria
    had: 1
    wall: 1
 ************/
-console.log('Problem 2:')
-
-// Add your code below this line
-
-// Add your code above this line
-
-/** added for formatting purposes **/
-console.log('')
-console.log('-----------------')
-
-/***********
-Problem: Scrabble Scorer
-
-Create a function named `scrabbleScore()` that accepts a parameter called "word". The function should use the following table to calculate the Scrabble score of a provided word:
-
-```
-Letter                           Value
-A, E, I, O, U, L, N, R, S, T       1
-D, G                               2
-B, C, M, P                         3
-F, H, V, W, Y                      4
-K                                  5
-J, X                               8
-Q, Z                               10
-```
-
-Feel free to add any additional functions or variables you deem necessary to meet the above requirements
-
-Test Cases:
-Use the following test cases to confirm your program meets the success criteria
-
-1. scrabbleScore("cabbage")
-   Note: c = 3, a = 1 (twice), b = 3 (twice), g = 2, e = 1
-
-   Expected Result: 14
-
-2. scrabbleScore("javascript")
-
-   Expected Result: 24
-
-3. scrabbleScore("function")
-
-   Expected Result: 13
-
-************/
-console.log('Problem 3:')
-
-// Add your code below this line
-
-// Add your code above this line
-
-/** added for formatting purposes **/
-console.log('')
-console.log('-----------------')
-
-/***********
-Problem: Palindromes
-
-Palindromes are words which read the same forward as backwards. For example, "madam" and "noon" are both palindromes.
-
-Create a function named `isPalindrome()` that accepts a parameter called "word". The function will return true if the word is a palindrome and false if it is not.
-
-Feel free to add any additional functions or variables you deem necessary to meet the above requirements
-
-Test Cases:
-Use the following test cases to confirm your program meets the success criteria
-
-1. isPalindrome("noon")
-
-   Expected Result: true
-
-2. isPalindrome("racecar")
-
-   Expected Result: true
-
-3. isPalindrome("moon")
-
-   Expected Result: false
-
-4. isPalindrome("run")
-
-   Expected Result: false
-
-************/
-console.log('Problem 4:')
-
-// Add your code below this line
-
-// Add your code above this line
-
-/** added for formatting purposes **/
-console.log('')
-console.log('-----------------')
-
-/***********
-Problem: Double Letter Checker
-
-Create a function that takes a "word" as a parameter and returns true if the word has two consecutive identical letters.
-
-Feel free to add any additional functions or variables you deem necessary to meet the above requirements
-
-Test Cases:
-Use the following test cases to confirm your program meets the success criteria
-
-1. doubleLetters("loop")
-
-   Expected Result: true
-
-2. doubleLetters("rune")
-
-   Expected Result: false
-
-3. doubleLetters("apple")
-
-   Expected Result: true
-
-************/
-console.log('Problem 5:')
+console.log('Problem 5 - bonus:')
 
 // Add your code below this line
 
