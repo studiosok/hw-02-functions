@@ -30,7 +30,22 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 1:')
 
 // Add your code below this line
+const playerCardScore = 19
+const dealerCardScore = 22
 
+
+function blackJack(x, y) {
+  if (y > 21 && x > 21) {
+    return 0
+} else if ( y <= 21 && y > x || y <= 21 && y !== x) {
+    return y
+} else if (x <= 21 && x > y || x <= 21 && x !== y  ) {
+    return x
+} else ( x <= 21 && y <= 21 && (x === y ))
+  return "This hand is a push."
+}
+
+console.log(blackJack(playerCardScore, dealerCardScore))
 // Add your code above this line
 
 /** added for formatting purposes **/
@@ -76,6 +91,18 @@ console.log('Problem 2:')
 
 // Add your code below this line
 
+  scores = { 'A' : 1, 'B' : 3, 'C' : 3, 'D' : 2, 'E' : 1, 'F' : 4, 'G' : 2, 'H' : 4, 'I' : 1, 'J' : 8, 'K' : 5, 'L' : 1, 'M' : 3, 'N' : 1, 'O' : 1, 'P' : 3, 'Q' : 10, 'R' : 1, 'S' : 1, 'T' : 1, 'U' : 1, 'V' : 4, 'W' : 4, 'X' : 4, 'Y' : 4, 'Z' : 10 };
+function scrabbleScore(word) {
+    word = word.toUpperCase();
+  let sum = 0;
+  for (var i = 0; i < word.length; ++i) {
+      sum += scores[word.charAt(i)] || 0;
+  }
+  return(sum);
+}
+console.log(scrabbleScore("function"))
+
+
 // Add your code above this line
 
 /** added for formatting purposes **/
@@ -114,7 +141,14 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+function isPalindrome(word) {
+  const re = /[/W_]/g;
+  const lowRegStr = word.toLowerCase().replace(re, '')
+  const reverseStr = lowRegStr.split('').reverse().join('')
+  return reverseStr === lowRegStr
+}
 
+console.log(isPalindrome('run'))
 // Add your code above this line
 
 /** added for formatting purposes **/
@@ -147,7 +181,9 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 4:')
 
 // Add your code below this line
-
+function doubleLetters(word) {
+  
+}
 // Add your code above this line
 
 /** added for formatting purposes **/
