@@ -258,13 +258,23 @@ console.log('Problem 5 - bonus:')
 
 // Add your code below this line
 
-// const result = phrase.split(" ")
-//
-//
-// function wordCount(phrase) {
-//
-//
-// }
+function wordCount(phrase) {
+  let words = phrase.replace([","], "").split(" ")
+  let phraseCount = {}
+
+  words.forEach((word) => {
+    if (phraseCount[word] === undefined) {
+      phraseCount[word] = 1
+    } else {
+      phraseCount[word] = phraseCount[word] + 1
+    }
+  })
+  return phraseCount
+
+}
+console.log(wordCount("Baby shark, doo doo doo doo"))
+
+
 // Add your code above this line
 
 /** added for formatting purposes **/
