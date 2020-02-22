@@ -184,20 +184,19 @@ console.log('Problem 4:')
 
 
 function doubleLetters(word) {
+
   let final = word.split("")
+  let duplicate = word.split("")
 
-  // forEach() or find((letter.[index] === letter.[index] + 1))
-
-  for(i = 0; i < word.length; i++) {
-    if(letterOne === letterTwo) {
-      return console.log(letterOne + " and " + letterTwo)
-    } else {
+  for(i = 1; i < final.length; i++) {
+    if(final[i] === duplicate[i + 1])
+      return true
+      else
       return false
     }
-    }
-  }
+}
 
-console.log(doubleLetters('nob'))
+console.log(doubleLetters('apple'))
 
 // Add your code above this line
 
