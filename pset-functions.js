@@ -95,7 +95,7 @@ console.log('Problem 2:')
 function scrabbleScore(word) {
     word = word.toUpperCase();
   let sum = 0;
-  for (var i = 0; i < word.length; ++i) {
+  for (i = 0; i < word.length; ++i) {
       sum += scores[word.charAt(i)] || 0;
   }
   return(sum);
@@ -142,14 +142,14 @@ console.log('Problem 3:')
 
 // Add your code below this line
 function isPalindrome(word) {
-  const re = /[/W_]/g;
-  const lowRegStr = word.toLowerCase().replace(re, '')
-  const reverseStr = lowRegStr.split('').reverse().join('')
-  return reverseStr === lowRegStr
+  const originalStr = word.toLowerCase()
+  const reverseStr = originalStr.split('').reverse().join('')
+  return reverseStr === originalStr
 }
 
-console.log(isPalindrome('run'))
+console.log(isPalindrome('racecar'))
 // Add your code above this line
+
 
 /** added for formatting purposes **/
 console.log('')
@@ -181,9 +181,24 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 4:')
 
 // Add your code below this line
+
+
 function doubleLetters(word) {
-  
-}
+  let final = word.split("")
+
+  // forEach() or find((letter.[index] === letter.[index] + 1))
+
+  for(i = 0; i < word.length; i++) {
+    if(letterOne === letterTwo) {
+      return console.log(letterOne + " and " + letterTwo)
+    } else {
+      return false
+    }
+    }
+  }
+
+console.log(doubleLetters('nob'))
+
 // Add your code above this line
 
 /** added for formatting purposes **/
@@ -244,6 +259,13 @@ console.log('Problem 5 - bonus:')
 
 // Add your code below this line
 
+// const result = phrase.split(" ")
+//
+//
+// function wordCount(phrase) {
+//
+//
+// }
 // Add your code above this line
 
 /** added for formatting purposes **/
